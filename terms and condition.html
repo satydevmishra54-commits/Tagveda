@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - Tagveda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary-color: #e34c26;
+            --secondary-color: #f06529;
+            --dark-color: #232323;
+            --light-color: #f8f9fa;
+            --text-color: #333;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect x="0" y="0" width="100" height="100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><text x="50" y="50" font-family="monospace" font-size="14" fill="rgba(255,255,255,0.05)" text-anchor="middle" dominant-baseline="middle">&lt;/&gt;</text></svg>');
+            background-size: 100px 100px;
+            z-index: 1;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .terms-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            padding: 2.5rem;
+            animation: fadeIn 0.8s ease;
+        }
+
+        .terms-container h2 {
+            color: var(--primary-color);
+            margin: 2rem 0 1rem;
+            font-size: 1.8rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .terms-container h2:first-child {
+            margin-top: 0;
+        }
+
+        .terms-container h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--secondary-color);
+        }
+
+        .terms-container h3 {
+            color: var(--dark-color);
+            margin: 1.5rem 0 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        .terms-container p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .terms-container ul {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        .terms-container li {
+            margin-bottom: 0.5rem;
+            font-size: 1.05rem;
+        }
+
+        .terms-container a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .terms-container a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight-box {
+            background-color: rgba(227, 76, 38, 0.05);
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .last-updated {
+            text-align: right;
+            font-style: italic;
+            color: #666;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .footer-links {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .terms-container {
+                padding: 1.5rem;
+            }
+            
+            .terms-container h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .terms-container {
+                padding: 1rem;
+            }
+            
+            .footer-links a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Terms and Conditions</h1>
+            <p class="tagline">Please read these terms carefully before using Tagveda's HTML learning resources</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="terms-container">
+            <h2>Introduction to Tagveda</h2>
+            <p>Welcome to Tagveda, your comprehensive resource for learning HTML - the fundamental language of the web. Tagveda provides educational content, tutorials, examples, and interactive exercises designed to help users master HTML from basic concepts to advanced techniques.</p>
+            <p>By accessing or using our website, you agree to be bound by these Terms and Conditions. If you disagree with any part of these terms, then you may not access the service.</p>
+            
+            <h2>Use of Content</h2>
+            <p>All content on Tagveda, including but not limited to text, graphics, logos, images, audio clips, digital downloads, data compilations, and software, is the property of Tagveda or its content suppliers and protected by international copyright laws.</p>
+            
+            <h3>Permitted Use</h3>
+            <ul>
+                <li>You may access and view the content for personal, non-commercial educational purposes</li>
+                <li>You may share links to our content on social media platforms</li>
+                <li>You may print or download content for your personal use</li>
+                <li>You may quote small portions of our content with proper attribution to Tagveda</li>
+            </ul>
+            
+            <h3>Prohibited Use</h3>
+            <ul>
+                <li>You may not reproduce, duplicate, copy, sell, or exploit any portion of the Service without express written permission from Tagveda</li>
+                <li>You may not use our content for commercial purposes without prior authorization</li>
+                <li>You may not scrape or extract data from our website using automated tools</li>
+                <li>You may not republish our content in its entirety on other websites</li>
+            </ul>
+            
+            <div class="highlight-box">
+                <p><strong>Intellectual Property Notice:</strong> All HTML examples, tutorials, and educational materials on Tagveda are protected by copyright law. While HTML itself is an open standard, our specific presentation, organization, and educational approach constitutes original creative work.</p>
+            </div>
+            
+            <h2>Third-Party Advertising</h2>
+            <p>Tagveda may display third-party advertisements, including but not limited to Google AdSense, to support our free educational content. These advertisements are provided by third-party advertising networks.</p>
+            
+            <h3>Google AdSense</h3>
+            <p>Tagveda uses Google AdSense to display advertisements based on your interests and previous interactions with our website and other sites on the Internet. Google may use cookies to collect information about your visits to this and other websites in order to provide advertisements about goods and services of interest to you.</p>
+            
+            <h3>Our Responsibility</h3>
+            <ul>
+                <li>We strive to ensure that advertisements displayed on our site are appropriate for our audience</li>
+                <li>We do not endorse the products or services advertised through third-party networks</li>
+                <li>We are not responsible for the content, privacy practices, or terms of service of third-party advertising networks</li>
+                <li>We are not liable for any transactions or interactions between you and advertisers</li>
+            </ul>
+            
+            <h3>Your Choices</h3>
+            <p>You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank">Ads Settings</a>. Alternatively, you can opt out of a third-party vendor's use of cookies for personalized advertising by visiting <a href="http://www.aboutads.info/choices/" target="_blank">www.aboutads.info</a>.</p>
+            
+            <h2>User Accounts</h2>
+            <p>When you create an account with Tagveda, you must provide information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our service.</p>
+            <p>You are responsible for safeguarding the password that you use to access the service and for any activities or actions under your password, whether your password is with our service or a third-party service.</p>
+            
+            <h2>Intellectual Property Rights</h2>
+            <p>Except as expressly provided in these Terms, no part of the Service and no Content may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.</p>
+            
+            <h2>Limitation of Liability</h2>
+            <p>In no event shall Tagveda, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your use of the service.</p>
+            
+            <h2>Termination</h2>
+            <p>We may terminate or suspend your account and bar access to the service immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever and without limitation.</p>
+            
+            <h2>Governing Law</h2>
+            <p>These Terms shall be interpreted and governed by the laws of the country in which Tagveda operates, without regard to its conflict of law provisions.</p>
+            
+            <h2>Changes to Terms and Conditions</h2>
+            <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
+            
+            <h2>Contact Information</h2>
+            <p>Questions about the Terms and Conditions should be sent to us at <a href="mailto:Priyankamishra1234512345@gmail.com">Priyankamishra1234512345@gmail.com</a>.</p>
+            
+            <p class="last-updated">Last updated: August 2023</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms and Conditions</a>
+        </div>
+        <p>&copy; 2023 Tagveda. All rights reserved. | Learn HTML, Build the Web</p>
+    </footer>
+
+    <script>
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Add print functionality
+        window.addEventListener('load', function() {
+            const printBtn = document.createElement('button');
+            printBtn.innerHTML = '<i class="fas fa-print"></i> Print Terms';
+            printBtn.style.cssText = 'position: fixed; bottom: 20px; right: 20px; background-color: var(--primary-color); color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; box-shadow: var(--shadow); z-index: 1000; transition: var(--transition);';
+            
+            printBtn.addEventListener('click', function() {
+                window.print();
+            });
+            
+            printBtn.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = 'var(--secondary-color)';
+                this.style.transform = 'translateY(-3px)';
+            });
+            
+            printBtn.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = 'var(--primary-color)';
+                this.style.transform = 'translateY(0)';
+            });
+            
+            document.body.appendChild(printBtn);
+        });
+    </script>
+</body>
+</html>
