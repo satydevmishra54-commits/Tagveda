@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tagveda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary-color: #e34c26;
+            --secondary-color: #f06529;
+            --dark-color: #232323;
+            --light-color: #f8f9fa;
+            --text-color: #333;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect x="0" y="0" width="100" height="100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><text x="50" y="50" font-family="monospace" font-size="14" fill="rgba(255,255,255,0.05)" text-anchor="middle" dominant-baseline="middle">&lt;/&gt;</text></svg>');
+            background-size: 100px 100px;
+            z-index: 1;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .html-icon {
+            display: inline-block;
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            animation: pulse 2s infinite;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        /* About Section */
+        .about-section {
+            animation: slideInLeft 0.8s ease;
+        }
+
+        .about-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .about-section h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background: var(--secondary-color);
+        }
+
+        .about-section p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .features {
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-icon {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            margin-top: 0.2rem;
+        }
+
+        .contact-info {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .contact-item i {
+            color: var(--primary-color);
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+
+        /* Contact Form */
+        .form-section {
+            animation: slideInRight 0.8s ease;
+        }
+
+        .form-container {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .form-container h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .form-container h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background: var(--secondary-color);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(227, 76, 38, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: var(--transition);
+            display: inline-block;
+            font-weight: 600;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(227, 76, 38, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .social-links {
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 50%;
+            line-height: 40px;
+            margin: 0 0.5rem;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .form-container {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Contact Us</h1>
+            <p class="tagline">Have questions about HTML? We're here to help! Reach out to the Tagveda team and let's build the web together.</p>
+            <div>
+                <span class="html-icon">&lt;/&gt;</span>
+                <span class="html-icon">&lt;div&gt;</span>
+                <span class="html-icon">&lt;form&gt;</span>
+                <span class="html-icon">&lt;style&gt;</span>
+                <span class="html-icon">&lt;script&gt;</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="about-section">
+            <h2>About Tagveda</h2>
+            <p>Welcome to Tagveda, your comprehensive resource for mastering HTML - the foundation of web development. Our platform covers everything from basic tags to advanced HTML5 features, making it the perfect destination for beginners and experienced developers alike.</p>
+            
+            <p>At Tagveda, we believe in making HTML accessible to everyone. Our tutorials, examples, and interactive exercises are designed to help you understand not just the "how" but also the "why" behind each HTML element and attribute.</p>
+            
+            <div class="features">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                    <div>
+                        <h3>Comprehensive Coverage</h3>
+                        <p>From basic HTML structure to semantic elements, forms, multimedia, and APIs - we cover it all.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-code"></i></div>
+                    <div>
+                        <h3>Practical Examples</h3>
+                        <p>Learn with real-world code examples that you can immediately apply to your projects.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-book-open"></i></div>
+                    <div>
+                        <h3>Latest Standards</h3>
+                        <p>Stay updated with the latest HTML5 features and best practices in web development.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>Email:</strong> Priyankamishra1234512345@gmail.com
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong>Response Time:</strong> Within 24 hours
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="form-container">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2023 Tagveda. All rights reserved. | Learn HTML, Build the Web</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:Priyankamishra1234512345@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            const formContainer = document.querySelector('.form-container');
+            const successMessage = document.createElement('div');
+            successMessage.style.padding = '1rem';
+            successMessage.style.marginTop = '1rem';
+            successMessage.style.backgroundColor = '#d4edda';
+            successMessage.style.color = '#155724';
+            successMessage.style.borderRadius = '5px';
+            successMessage.textContent = 'Thank you for your message! Your email client should open shortly.';
+            
+            // Clear form
+            document.getElementById('contactForm').reset();
+            
+            // Add success message to form
+            formContainer.appendChild(successMessage);
+            
+            // Remove success message after 5 seconds
+            setTimeout(() => {
+                successMessage.remove();
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
