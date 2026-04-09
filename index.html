@@ -1718,7 +1718,7 @@ It tells the browser what to display and how to display it.</p>
                     <p>Image is from internet</p>
                     <h3>🔹 Important Points</h3>
                    <p>✔ Path must be correct, otherwise image won’t show ❌</p>
-                    <p>✔ File name is case-sensitive (Cat.jpg ≠ cat.jpg)</p>
+                    <p>✔ File name is case-sensitive</p>
                     <p>✔ Use / not \</p>
                 </div>
 
@@ -1807,24 +1807,33 @@ It tells the browser what to display and how to display it.</p>
                             </tr>
                             <tr>
                                 <td>&lt;table&gt;</td>
-                                <td>Table</td>
+                                <td>Creates a table</td>
                             </tr>
                             <tr>
                                 <td>&lt;tr&gt;</td>
-                                <td>Row</td>
+                                <td>Creates a row in the table</td>
                             </tr>
                             <tr>
                                 <td>&lt;th&gt;</td>
-                                <td>Heading</td>
+                                <td>Creates a heading cell</td>
                             </tr>
                             <tr>
                                 <td>&lt;td&gt;</td>
-                                <td>Data</td>
+                                <td>Creates a normal cell (data)</td>
                             </tr>
                         </table>
                     </div>
 
                     <h3>Colspan & Rowspan</h3>
+                    <p>These are attributes used in &lt;td&gt; or &lt;th&gt; to merge cells in a table.</p>
+                    <h3>Colspan</h3>
+                    <p><b>What is the use of Colspan?</b></p>
+                    <p>Merge columns (→ sideways)</p>
+                    <p>Here,This cell will take space of 2 columns</p>
+                    <h3>Rowspan</h3>
+                    <p><b>What is the use of Rowspan?</b></p>
+                    <p>Merge rows (↓ up-down)</p>
+                    <p>This cell will take space of 2 rows</p>
                     <div class="code-block">
                         &lt;td colspan="2"&gt;Total&lt;/td&gt;
                     </div>
@@ -1832,6 +1841,8 @@ It tells the browser what to display and how to display it.</p>
                     <img src="total.png" alt="ChatGPT Image" height="300">
 
                     <h3>Table Caption</h3>
+                    <p><b>What is &lt;caption&gt; Tag?</b></p>
+                    The &lt;caption&gt; tag is used to give a title to a table.
                     <div class="code-block">
                         &lt;caption&gt;Student Data&lt;/caption&gt;
                     </div>
@@ -1900,6 +1911,8 @@ It tells the browser what to display and how to display it.</p>
                     <p>Forms collect user input.</p>
 
                     <h3>Form Tag</h3>
+                    <p><b>what is &lt;form&gt; Tag </b></p>
+                    <p>The &lt;form&gt; tag is used to collect user input (like name, email, password, etc.) and send it to a server.</p>
                     <div class="code-block">
                         &lt;form&gt;<br>
                         &nbsp;&nbsp;Name: &lt;input type="text"&gt;<br>
@@ -1919,6 +1932,8 @@ It tells the browser what to display and how to display it.</p>
                     <img src="password.png" alt="ChatGPT Image" height="300">
 
                     <h3>Radio Button</h3>
+                    <p><b>What is radio button?</b></p>
+                    <p>A radio button is used when the user can select only ONE option from multiple choices.</p>
                     <div class="code-block">
                         &lt;input type="radio" name="gender"&gt; Male<br>
                         &lt;input type="radio" name="gender"&gt; Female
@@ -1926,6 +1941,8 @@ It tells the browser what to display and how to display it.</p>
                     <p style="font-size: 30px;"> <b> This is the output of the code </b></p>
                     <img src="male.png" alt="ChatGPT Image" height="300">
                     <h3>Checkbox</h3>
+                    <p><b>What is Checkbox?</b></p>
+                    <p>A checkbox is used when the user can select multiple options.</p>
                     <div class="code-block">
                         &lt;input type="checkbox"&gt; HTML<br>
                         &lt;input type="checkbox"&gt; CSS
@@ -1933,11 +1950,20 @@ It tells the browser what to display and how to display it.</p>
 <p style="font-size: 30px;"> <b> This is the output of the code </b></p>
                     <img src="html.png" alt="ChatGPT Image" height="300">
                     <h3>Textarea</h3>
+                    <p><b> What is textarea?</b></p>
+                    <p>A &lt;textarea&gt; is used to create a multi-line input box where users can write long text (like messages, comments, feedback).</p>
                     <div class="code-block">
                         &lt;textarea rows="4" cols="30"&gt;&lt;/textarea&gt;
                     </div>
 
                     <h3>Select & Option</h3>
+                    <p>These tags are used to create a dropdown list (like a menu where you choose one option).</p>
+                    <h3>Select Tag</h3>
+                    <p><b>What is th work of select tag?</b></p>
+                    <p>Work: Creates the dropdown box</p>
+                    <h3>Option</h3>
+                    <p><b>What is the work of Option Tag?</b></p>
+                    <p>Work: Creates the dropdown box</p>
                     <div class="code-block">
                         &lt;select&gt;<br>
                         &nbsp;&nbsp;&lt;option&gt;India&lt;/option&gt;<br>
@@ -1948,6 +1974,8 @@ It tells the browser what to display and how to display it.</p>
                     <img src="india.png" alt="ChatGPT Image" height="300">
 
                     <h3>Submit Button</h3>
+                    <p><b>What is the work of submit button?</b></p>
+                    <p>A submit button is used to send form data to the server.</p>
                     <div class="code-block">
                         &lt;input type="submit" value="Send"&gt;
                     </div>
@@ -2038,13 +2066,17 @@ It tells the browser what to display and how to display it.</p>
                     <img src="reset.png" alt="ChatGPT Image" height="300">
 
                     <h3>Required Attribute</h3>
+                    <p><b>What is required attribute?</b></p>
+                    <p>The required attribute is used to make a field mandatory (compulsory).</p>
                     <div class="code-block">
                         &lt;input type="text" required&gt;
                     </div>
                     <p style="font-size: 30px;"> <b> This is the output of the code </b></p>
-                    <img src="required.png" alt="ChatGPT Image" height="300">   
+                    <img src="requried.png" alt="ChatGPT Image" height="300">   
 
                     <h3>Placeholder</h3>
+                    <p><b>What is Placeholder?</b></p>
+                    <p>A placeholder is a hint text shown inside an input box or textarea.It tells the user what to enter.</p>
                     <div class="code-block">
                         &lt;input type="text" placeholder="Enter name"&gt;
                     </div>
@@ -2113,6 +2145,8 @@ It tells the browser what to display and how to display it.</p>
                     <p>Media tags allow you to play sound and videos.</p>
 
                     <h3>Audio Tag</h3>
+                    <p><b>What is audio tag?</b></p>
+                    <p>The &lt;audio&gt; tag is used to add sound/music to a webpage.</p>
                     <div class="code-block">
                         &lt;audio controls&gt;<br>
                         &nbsp;&nbsp;&lt;source src="song.mp3" type="audio/mp3"&gt;<br>
@@ -2123,13 +2157,15 @@ It tells the browser what to display and how to display it.</p>
 
                     <h3>Attributes:</h3>
                     <ul>
-                        <li>controls</li>
-                        <li>autoplay</li>
-                        <li>loop</li>
-                        <li>muted</li>
+                        <li>controls (Work: Shows media control buttons Like:Play▶ Pause⏸ Volume🔊 Fullscreen⛶)</li>
+                        <li>autoplay(Starts playing automatically.)</li>
+                        <li>loop(Starts playing automatically)</li>
+                        <li>muted(Starts media with no sound)</li>
                     </ul>
 
                     <h3>Video Tag</h3>
+                    <p><b>What is video tag?</b></p>
+                    <p>The &lt;video&gt; tag is used to add videos to a webpage.</p>
                     <div class="code-block">
                         &lt;video width="400" controls&gt;<br>
                         &nbsp;&nbsp;&lt;source src="movie.mp4" type="video/mp4"&gt;<br>
@@ -2139,6 +2175,8 @@ It tells the browser what to display and how to display it.</p>
                     <img src="video.png" alt="ChatGPT Image" height="300">
 
                     <h3>Poster Images</h3>
+                    <p><b>What is poster image?</b></p>
+                    <p>The poster attribute is used in the &lt;video&gt; tag to show an image before the video starts playing.</p>
                     <div class="code-block">
                         &lt;video poster="thumb.jpg" controls&gt;&lt;/video&gt;
                     </div>
