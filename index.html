@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tagveda - Learn HTML Step By Step| Free HTML Course</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Learn what HTML is, how it works, and why it is important for building websites. Beginner-friendly introduction on Tagveda.">
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJ9CHHGXHP"></script>
@@ -732,6 +732,33 @@
         }
 
         @media (max-width: 768px) {
+            nav ul {
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+nav ul li {
+    margin: 8px 0;
+}
+
+nav ul li a {
+    padding: 10px;
+}
+            body {
+    padding: 10px;
+}
+
+.section {
+    padding: 10px;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 18px;
+}
             .logo-text { font-size: 3rem; }
             .logo-subtitle { font-size: 1.2rem; }
             .header-title { font-size: 2rem; }
@@ -757,6 +784,13 @@
                 padding: 1.5rem;
             }
         }
+        p {
+    line-height: 1.7;
+}
+
+.section {
+    margin-bottom: 25px;
+}
     </style>
 </head>
 <body>
@@ -2326,6 +2360,8 @@ It tells the browser what to display and how to display it.</p>
                     <p>Layout means page structure.</p>
 
                     <h3>Div-based Layout (Old way)</h3>
+                    <p><b>What is Div-based Layout (Old way)?</b></p>
+                    <p>Earlier (before HTML5), developers used &lt;div&gt; (division) tags to design the entire layout of a website—like header, menu, sidebar, and footer.</p>
                     <div class="code-block">
                         &lt;div id="header"&gt;&lt;/div&gt;<br>
                         &lt;div id="content"&gt;&lt;/div&gt;<br>
@@ -2335,6 +2371,8 @@ It tells the browser what to display and how to display it.</p>
                     <img src="div.png" alt="ChatGPT Image" height="300">
                 
                     <h3>Semantic Layout (Modern)</h3>
+                    <p><b>What is Semantic Layout (Modern)? </b></p>
+                    <p>Semantic Layout means using meaningful HTML tags to create the structure of a webpage, instead of using only &lt;div&gt; .</p>
                     <div class="code-block">
                         &lt;header&gt;&lt;/header&gt;<br>
                         &lt;nav&gt;&lt;/nav&gt;<br>
@@ -2345,6 +2383,8 @@ It tells the browser what to display and how to display it.</p>
                     <img src="header section.png" alt="ChatGPT Image" height="300">    
 
                     <h3>Responsive Layout Basics</h3>
+                    <p><b>Why we use Responsive Layout Basics?</b></p>
+                    <p>Responsive Layout means designing a website so it works properly on all devices—mobile, tablet, and desktop.</p> 
                     <ul>
                         <li>Use percentages</li>
                         <li>Use viewport meta tag</li>
@@ -2417,12 +2457,16 @@ It tells the browser what to display and how to display it.</p>
                     <p>Iframe embeds another webpage.</p>
 
                     <h3>Basic Iframe</h3>
+                    <b><p>what is basic iframe?</p></b>
+                    <p>A Basic Iframe is the simplest use of the &lt;iframe&gt; tag to display another webpage inside your current webpage.</p>
                     <div class="code-block">
                         &lt;iframe src="page.html"&gt;&lt;/iframe&gt;
                     </div>
                     <p style="font-size: 30px;"> <b> This is the output of the code </b></p>    
                     <img src="go.png" alt="ChatGPT Image" height="300">
                     <h3>YouTube Video Embed</h3>
+                    <p><b>Waht is YouTube Video Embed?</b></p>
+                    <p>YouTube Video Embed = displaying a YouTube video on your webpage using &lt;iframe&gt;.</p>
                     <div class="code-block">
                         &lt;iframe src="https://www.youtube.com/embed/videoID"&gt;&lt;/iframe&gt;
                     </div>
@@ -2430,6 +2474,8 @@ It tells the browser what to display and how to display it.</p>
                     <img src="iframe.png" alt="ChatGPT Image" height="300">
 
                     <h3>Google Map Embed</h3>
+                    <p><b>What is Google Map Embed?</b></p>
+                    <p>Google Map Embed = showing a Google Map on your webpage using &lt;iframe&gt;.</p>
                     <div class="code-block">
                         &lt;iframe src="map_link"&gt;&lt;/iframe&gt;
                     </div>
@@ -2437,6 +2483,8 @@ It tells the browser what to display and how to display it.</p>
                     <img src="map.png" alt="ChatGPT Image" height="300">
 
                     <h3>Security Attributes</h3>
+                    <p><b> What is security attributes?</b></p>
+                    <p>Security attributes are used to protect your webpage when you embed content (like videos, maps, or other websites) using &lt;iframe&gt;.</p>
                     <div class="code-block">
                         &lt;iframe sandbox&gt;&lt;/iframe&gt;
                     </div>
