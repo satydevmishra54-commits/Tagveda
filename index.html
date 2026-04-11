@@ -2864,7 +2864,7 @@ It tells the browser what to display and how to display it.</p>
                     <p>HTML supports drawings and graphics.</p>
 
                     <h3>Canvas</h3>
-                    <p>Used for dynamic graphics</p>
+                    <p>The &lt;canvas&gt;  tag is used to draw graphics on a web page using JavaScript.</p>
                     <div class="code-block">
                         &lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;<br>
                         (Needs JavaScript)
@@ -2873,7 +2873,7 @@ It tells the browser what to display and how to display it.</p>
                     <img src="canvas.png" alt="ChatGPT Image" height="300">
 
                     <h3>SVG</h3>
-                    <p>Used for vector graphics</p>
+                    <p>SVG is a way to draw shapes, icons, and graphics using code in HTML.</p>
 
                     <h3>Canvas vs SVG</h3>
                     <div class="table-container">
@@ -2883,16 +2883,16 @@ It tells the browser what to display and how to display it.</p>
                                 <th>SVG</th>
                             </tr>
                             <tr>
-                                <td>Pixel-based</td>
-                                <td>Vector-based</td>
+                                <td>Pixel-based (image made of small colored squares (pixels).)</td>
+                                <td>Vector-based(image made of shapes (not tiny dots).)</td>
                             </tr>
                             <tr>
-                                <td>JS required</td>
-                                <td>HTML based</td>
+                                <td>JS required(“JS required” means you need JavaScript to make something work.)</td>
+                                <td>HTML based(works using only HTML tags (and sometimes CSS).)</td>
                             </tr>
                             <tr>
-                                <td>Fast for games</td>
-                                <td>Best for icons</td>
+                                <td>Fast for games(It means a technology can run games smoothly, quickly, and without lag.)</td>
+                                <td>Best for icons(It means which technology is most suitable for creating icons.)</td>
                             </tr>
                         </table>
                     </div>
@@ -2956,9 +2956,11 @@ It tells the browser what to display and how to display it.</p>
             <section class="section" id="accessibility">
                 <h2 class="section-title">HTML Accessibility</h2>
                 <div class="section-content">
-                    <p>Accessibility helps disabled users.</p>
+                    <p>HTML Accessibility means designing web pages so that everyone can use them, including people with disabilities.</p>
 
                     <h3>Alt Text</h3>
+                    <p><b>What is alt text?</b></p>
+                    <p>text that describes an image.</p>
                     <div class="code-block">
                         &lt;img src="img.jpg" alt="Student studying"&gt;
                     </div>
@@ -2967,6 +2969,8 @@ It tells the browser what to display and how to display it.</p>
                     <img src="picture.png" alt="ChatGPT Image" height="300">
 
                     <h3>Labels for Inputs</h3>
+                    <p><b>What is labels for inputs?</b></p>
+                    <p>Text that tells the user what to enter in an input box.</p>
                     <div class="code-block">
                         &lt;label&gt;Name:&lt;/label&gt;<br>
                         &lt;input type="text"&gt;
@@ -2974,6 +2978,8 @@ It tells the browser what to display and how to display it.</p>
 <p style="font-size: 30px;"> <b> This is the output of the code </b></p>    
                     <img src="label.png" alt="ChatGPT Image" height="300">  
                     <h3>ARIA Attributes</h3>
+                    <p><b>What aria attributes?</b></p>
+                    <p>ARIA (Accessible Rich Internet Applications) attributes are used to improve accessibility for users who use screen readers or assistive tools.</p>
                     <div class="code-block">
                         &lt;button aria-label="Close"&gt;X&lt;/button&gt;
                     </div>
@@ -3047,6 +3053,8 @@ It tells the browser what to display and how to display it.</p>
                     <p>Responsive design means the website works well on mobile, tablet, and desktop.</p>
 
                     <h3>Viewport Meta Tag</h3>
+                    <p><b>What is viewport meta tag?</b></p>
+                    <p>The viewport meta tag is used to make a website responsive (look good on mobile, tablet, and desktop).</p>
                     <div class="code-block">
                         &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
                     </div>
@@ -3054,6 +3062,8 @@ It tells the browser what to display and how to display it.</p>
                     <img src="viewport.png" alt="ChatGPT Image" height="300">
 
                     <h3>Responsive Images</h3>
+                    <p><b>What is responsive images?</b></p>
+                    <p>Responsive images are images that automatically adjust their size and quality based on the device (mobile, tablet, desktop).</p>
                     <div class="code-block">
                         &lt;img src="img.jpg" style="max-width:100%; height:auto;"&gt;
                     </div>
@@ -3126,7 +3136,7 @@ It tells the browser what to display and how to display it.</p>
             <section class="section" id="apis">
                 <h2 class="section-title">HTML APIs</h2>
                 <div class="section-content">
-                    <p>HTML5 provides built-in APIs.</p>
+                    <p>Tools provided by the browser to do powerful tasks (with JavaScript).</p>
 
                     <h3>Geolocation API</h3>
                     <p>Gets user location (with permission).</p>
@@ -3136,19 +3146,26 @@ It tells the browser what to display and how to display it.</p>
                     <p style="font-size: 30px;"> <b> This is the output of the code </b></p>
                     <img src="nagtive.png" alt="ChatGPT Image" height="300">    
                     <h3>Drag and Drop API</h3>
+                    <p><b>What  is drag and drop API?</b></p>
+                    <p>he Drag and Drop API allows you to drag an element and drop it into another place on a webpage.</p>
                     <div class="code-block">
                         draggable="true"
                     </div>
                     <p style="font-size: 30px;"> <b> This is the output of the code </b></p>
                     <img src="drag me.png" alt="ChatGPT Image" height="300">
                     <h3>Web Storage API</h3>
+                    <h3> Are of two types Local Storage and Session Storage.</h3>
                     <h4>Local Storage</h4>
+                    <p><b>What is local storage?</b></p>
+                    <p>Stores data even after you close the browser.</p>
                     <div class="code-block">
                         localStorage.setItem("name", "Satya");
                     </div>
                     <p style="font-size: 30px;"> <b> This is the output of the code </b></p>    
                     <img src="satya.png" alt="ChatGPT Image" height="300">
                     <h4>Session Storage</h4>
+                    <p><b>What is session storage?</b></p>
+                    <p>Stores data only until the tab is open.</p>
                     <div class="code-block">
                         sessionStorage.setItem("id", "101");
                     </div>
@@ -3225,6 +3242,8 @@ It tells the browser what to display and how to display it.</p>
                     </ul>
 
                     <h3>SEO-Friendly Structure</h3>
+                    <p><b>What is SEO-friendly structure?</b></p>
+                    <p>SEO (Search Engine Optimization) means designing your website so that search engines (like Google) can easily understand and rank it.</p>
                     <div class="code-block">
                         &lt;header&gt;<br>
                         &lt;main&gt;<br>
@@ -3302,6 +3321,8 @@ It tells the browser what to display and how to display it.</p>
                     </ul>
 
                     <h3>Lazy Loading</h3>
+                    <p><b>What is lazy loding?</b></p>
+                    <p>Lazy Loading means loading content (like images or videos) only when they are needed, not all at once.</p>
                     <div class="code-block">
                         &lt;img src="img.jpg" loading="lazy"&gt;
                     </div>
@@ -3522,6 +3543,8 @@ It tells the browser what to display and how to display it.</p>
                     <p>CSS styles HTML.</p>
 
                     <h3>Inline CSS</h3>
+                    <p><b>What is Inline CSS?</b></p>
+                    <p>Inline CSS is used to apply styles directly inside an HTML tag using the style attribute.</p>
                     <div class="code-block">
                         &lt;p style="color:red;"&gt;Text&lt;/p&gt;
                     </div>
@@ -3529,6 +3552,8 @@ It tells the browser what to display and how to display it.</p>
                     <img src="red.png" alt="ChatGPT Image" height="300">
 
                     <h3>Internal CSS</h3>
+                    <p><b>What is intternal CSS?</b></p>
+                    <p>Internal CSS is used to apply styles inside the same HTML file using the &lt;style&gt; tag.</p>
                     <div class="code-block">
                         &lt;style&gt;<br>
                         &nbsp;&nbsp;p { color: blue; }<br>
@@ -3537,6 +3562,8 @@ It tells the browser what to display and how to display it.</p>
                     <p style="font-size: 30px;"> <b> This is the output of the code </b></p>    
                     <img src="blue.png" alt="ChatGPT Image" height="300">   
                     <h3>External CSS (Best)</h3>
+                    <p><b>What is external css?</b></p>
+                    <p>External CSS is used to apply styles by linking a separate CSS file to your HTML file.</p>
                     <div class="code-block">
                         &lt;link rel="stylesheet" href="style.css"&gt;
                     </div>
@@ -3604,6 +3631,8 @@ It tells the browser what to display and how to display it.</p>
                     <p>JavaScript adds functionality.</p>
 
                     <h3>Script Tag</h3>
+                    <p><b>What is script tag?</b></p>
+                    <p>The &lt;script&gt; tag is used to add JavaScript code to an HTML page.</p>
                     <div class="code-block">
                         &lt;script&gt;<br>
                         &nbsp;&nbsp;alert("Hello");<br>
@@ -3613,6 +3642,8 @@ It tells the browser what to display and how to display it.</p>
                     <img src="banana.png" alt="ChatGPT Image" height="300">
 
                     <h3>External JS</h3>
+                    <p><b>What is external js?</b></p>
+                    <p>External JS means writing JavaScript code in a separate file (.js) and linking it to your HTML file.</p>
                     <div class="code-block">
                         &lt;script src="app.js"&gt;&lt;/script&gt;
                     </div>
