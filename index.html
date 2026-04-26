@@ -969,7 +969,9 @@
                 <h2 class="section-title">HTML Basics</h2>
                 <div class="section-content">
                     <h3>Structure of an HTML Document</h3>
-                    <p>Every HTML page has a fixed structure.</p>
+                    <p>Every HTML webpage follows a fixed and standard structure. This structure helps web browsers understand how to read and display the content properly.</p>
+                    <p>Even the simplest webpage must follow this basic format. Without this structure, the browser may not render the page correctly.</p>
+                    <p>Here is a basic example of an HTML document:</p>
                     <div class="code-block">
                         &lt;!DOCTYPE html&gt;<br>
                         &lt;html&gt;<br>
@@ -983,31 +985,37 @@
                         </div>
             <p style="font-size: 30px;"> <b> This is the output of the code </b></p>
             <img src="kouh.png" height="530">
-                    
-
+             <p><b>Explanation of Each Part:</b></p>
                     <h3>&lt;!DOCTYPE html&gt;</h3>
+                    <p>This is the first line of every HTML document.</p>
                     <ul>
-                        <li>Tells browser this is HTML5</li>
-                        <li>Must be written at the top</li>
+                        <li>It tells the browser that the document is written in HTML5 (latest version)</li>
+                        <li>It helps the browser display the page correctly</li>
+                        <li>It must always be written at the top of the document</li>
                     </ul>
-
+                    <p><b>Without this declaration, the browser may go into quirks mode, which can break the layout.</b></p>
                     <h3>&lt;html&gt; tag</h3>
+                    <p>The &lt;html&gt; tag is known as the root element of the webpage.</p>
                     <ul>
-                        <li>Root element of the page</li>
-                        <li>All code stays inside it</li>
+                        <li>It wraps all the content of the page</li>
+                        <li>Everything written in the HTML document must be inside this tag</li>
+                        <li>It represents the beginning and end of an HTML document</li>
                     </ul>
 
                     <h3>&lt;head&gt; tag</h3>
-                    <p>Contains:</p>
+                    <p>The &lt;head&gt; section contains information about the webpage, not the visible content.</p>
+                    <p>This information helps browsers and search engines understand the page.</p>
+                    <p>The &lt;head&gt; tag can include:</p>
                     <ul>
-                        <li>Title</li>
-                        <li>Meta tags</li>
-                        <li>CSS</li>
-                        <li>SEO info</li>
+                        <li>Title of the page (shown on browser tab)</li>
+                        <li>Meta tags (SEO and page information)</li>
+                        <li>Links to CSS files (for styling)</li>
+                        <li>Scripts or external resources.</li>
                     </ul>
 
                     <h3>&lt;body&gt; tag</h3>
-                    <p>Contains:</p>
+                    <p>The &lt;body&gt; tag contains all the visible content of the webpage.</p>
+                    <p>Whatever you want users to see must be written inside the  &lt;body&gt;.</p>
                     <ul>
                         <li>Text</li>
                         <li>Images</li>
@@ -1017,9 +1025,23 @@
                     </ul>
 
                     <h3>HTML Comments</h3>
-                    <p>Used to explain code (not visible on page)</p>
+                    <p>HTML comments are used to add notes or explanations inside the code.</p>
+                    <ul>
+                        <li>Comments are not displayed in the browser.</li>
+                        <li>They are helpful for developers to understand the code.</li>
+                        <li>They improve readability and maintenance.</li>
+                    </ul>
                     <div class="code-block">
                         &lt;!-- This is a comment --&gt;
+                        <h3>Key Points to Remember.</h3>
+                        <ul>
+                            <li>Every HTML page follows a standard structure.</li>
+                            <li> &lt;!DOCTYPE HTML &gt; must always be at the top.</li>
+                            <li> &lt;html&gt; is the root element</li>
+                            <li> &lt;head&gt; contains hidden information</li>
+                            <li> &lt;body&gt; contains visible content</li>
+                            <p><b>Comments help explain code but are not visible on the page.</b></p>
+                        </ul>
                     </div>
                 </div>
 
