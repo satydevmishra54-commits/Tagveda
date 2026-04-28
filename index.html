@@ -19,6 +19,7 @@
     <meta name="description" content="Tagveda is a free platform to learn HTML step by step with examples, quizzes and certificate.">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <style>
         :root {
             --primary-color: #e34c26;
@@ -4943,17 +4944,26 @@ It tells the browser what to display and how to display it.</p>
                     const downloadLink = document.createElement('a');
                     downloadLink.href = imgData;
                     downloadLink.download = `Tagveda_HTML_Certificate_${userName.replace(/\s+/g, '_')}.png`;
-                    downloadLink.textContent = 'Download Certificate';
-                    downloadLink.style.display = 'inline-block';
-                    downloadLink.style.marginTop = '20px';
-                    downloadLink.style.padding = '10px 20px';
-                    downloadLink.style.backgroundColor = '#4CAF50';
-                    downloadLink.style.color = 'white';
-                    downloadLink.style.textDecoration = 'none';
-                    downloadLink.style.borderRadius = '5px';
-                    
-                    // Add download link to certificate container
-                    certificateContainer.appendChild(downloadLink);
+                   if (downloadCertificateBtn) {
+    downloadCertificateBtn.addEventListener('click', () => {
+
+        const userName = certificateName.textContent;
+
+        const certificateElement = document.querySelector('.certificate');
+
+        html2canvas(certificateElement).then(canvas => {
+
+            const imgData = canvas.toDataURL('image/png');
+
+            const downloadLink = document.createElement('a');
+
+            downloadLink.href = imgData;
+
+            downloadLink.download = `Tagveda_HTML_Certificate_${userName.replace(/\s+/g, '_')}.png`;
+            
+            // Add download link to certificate container
+
+            downloadLink.click();
                 });
             });
         }
