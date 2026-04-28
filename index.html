@@ -19,6 +19,7 @@
     <meta name="description" content="Tagveda is a free platform to learn HTML step by step with examples, quizzes and certificate.">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <style>
         :root {
             --primary-color: #e34c26;
@@ -4925,38 +4926,27 @@ It tells the browser what to display and how to display it.</p>
             });
         }
         
-        // Download Certificate
+                // Download Certificate 
         if (downloadCertificateBtn) {
             downloadCertificateBtn.addEventListener('click', () => {
-                // Get user's name from certificate
-                const userName = certificateName.textContent;
-                
-                // Create a temporary canvas to generate certificate as an image
                 const certificateElement = document.querySelector('.certificate');
+                downloadCertificateBtn.textContent = 'Generating...';
                 
-                // Use html2canvas library to convert certificate to an image
                 html2canvas(certificateElement).then(canvas => {
-                    // Convert canvas to an image
                     const imgData = canvas.toDataURL('image/png');
-                    
-                    // Create a download link
-                    const downloadLink = document.createElement('a');
-                    downloadLink.href = imgData;
-                    downloadLink.download = `Tagveda_HTML_Certificate_${userName.replace(/\s+/g, '_')}.png`;
-downloadLink.textContent = 'Download Certificate';
-downloadLink.style.display = 'inline-block';
-downloadLink.style.marginTop = '20px';
-downloadLink.style.padding = '10px 20px';
-downloadLink.style.backgroundColor = '#4CAF50';
-downloadLink.style.color = 'white';
-downloadLink.style.textDecoration = 'none';
-downloadLink.style.borderRadius = '5px';
-
-certificateContainer.appendChild(downloadLink);
-    });
-
-});
- }
+                    const link = document.createElement('a');
+                    link.download = `Tagveda_HTML_Certificate_${certificateName.textContent.replace(/\s+/g, '_')}.png`;
+                    link.href = imgData;
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    downloadCertificateBtn.textContent = 'Download Certificate';
+                }).catch(err => {
+                    alert("Error generating certificate.");
+                    downloadCertificateBtn.textContent = 'Download Certificate';
+                });
+            });
+        }
 </script>
         <script>
         // Initialize the page
