@@ -4985,5 +4985,29 @@ downloadBtn.addEventListener("click", function () {
     <a href="terms and condition.html" style="color:white; margin:10px;">Terms & Conditions</a>
   </p>
 </footer>
+    <script>
+
+const downloadBtn = document.getElementById("download-certificate");
+
+downloadBtn.addEventListener("click", function () {
+
+    const certificate = document.querySelector(".certificate");
+
+    html2canvas(certificate).then(canvas => {
+
+        const link = document.createElement("a");
+
+        link.download = "Tagveda-Certificate.png";
+
+        link.href = canvas.toDataURL("image/png");
+
+        link.click();
+
+    });
+
+});
+
+</script>
+
 </body>
 </html>
