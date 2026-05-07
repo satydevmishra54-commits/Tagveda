@@ -2196,10 +2196,10 @@ The paragraph tag is one of the most commonly used HTML tags.</p>
             <section class="section" id="images">
                 <h2 class="section-title">HTML Images</h2>
                 <div class="section-content">
-                    <p>Images make websites attractive.</p>
+                    <p>Images make a website more beautiful, attractive, and interactive. They help users understand content easily and improve the overall design of a webpage. In HTML, images are added using the &lt;img&gt; tag. Images can be photos, logos, icons, banners, screenshots, or illustrations.</p>
                     <h3>Image Tag (&lt;img&gt;)</h3>
                     <b><p>What is Image Tag? (&lt;img&gt;)</p></b>
-                    <p>The &lt;img&gt; tag is used to display images on a webpage.</p>
+                    <p>The &lt;img&gt; tag is used to display images on a webpage. It is an empty tag, which means it does not need a closing tag.</p>
                     <div class="code-block">
                         &lt;img src="image.jpg" alt="My Image"&gt;
                     </div>
@@ -2229,12 +2229,36 @@ The paragraph tag is one of the most commonly used HTML tags.</p>
                                 <td>height</td>
                                 <td>Sets the height (size) of the image</td>
                             </tr>
+                            <tr>
+                                <td>title</td>
+                                <td>Shows text when the mouse is placed on the image</td>
+                            </tr>
+                            <tr>
+                                <td>loading</td>
+                                <td>Helps images load faster using lazy loading</td>
+                            </tr>
                         </table>
                     </div>
+                    <h3>src Attribute</h3>
+                    <p><b>What is src?</b></p>
+                    <p>The src attribute means source. It tells the browser where the image file is stored.</p>
+                    <h3>alt Attribute</h3>
+                    <p><b>What is alt?</b></p>
+                    <p>The alt attribute provides alternative text if the image does not load properly. It is also useful for screen readers and improves website accessibility.</p>
+                    <h2>Importance of alt</h2>
+                   <ul>
+                       <li>✔ Helps visually impaired users</li>
+                       <li>✔ Improves SEO</li>
+                       <li>✔ Shows text if image is missing</li>
+                       <li>✔ Makes websites more user-friendly</li>
+                   </ul>
+                    <h3>Width and Height</h3>
+                    <p><b>What is Width and Height?</b></p>
+                    <p>These attributes are used to control the size of the image.</p>
 
                     <h3>Image as a Link</h3>
                     <p><b>What is the use of image as a link?</b></p>
-                    <p>Image as a link means when you click on an image, it opens another page or website.</p>
+        <p>An image can also work like a button or hyperlink. When the user clicks the image, another webpage or website opens.</p>
                     <div class="code-block">
                         &lt;a href="home.html"&gt;<br>
                         &nbsp;&nbsp;&lt;img src="logo.png"&gt;<br>
@@ -2242,20 +2266,91 @@ The paragraph tag is one of the most commonly used HTML tags.</p>
                     </div>
                     <p style="font-size: 30px;"> <b> This is the output of the code </b></p>
                     <img src="logo.png" alt="ChatGPT Image" height="300">
+                    <h2>Explanition</h2>
+                    <ul>
+                        <li>&lt;a&gt; tag creates the link</li>
+                        <li>&lt;img&gt; tag displays the image</li>
+                        <li>Clicking the image opens home.html</li>
+                    </ul>
 
                     <h3>Image Paths</h3>
                     <p><b>What is image paths</b></p>
-                    <p>Image path means the location of the image file that you give in the &lt;src&gt; attribute of the &lt;img&gt; tag.</p>
+            <p>mage path means the location of the image file that is given inside the src attribute.If the path is wrong, the image will not display.</p>
+              <h3>Types of Image Paths</h3>
+               <ul>
+                   <li>Relative Path</li>
+                   <li>Absolute Path</li>
+               </ul>
                     <h5>Relative Path</h5>
                     <p><b>What is relative path?</b></p>
-                    <p>Image is inside your project folder</p>
+                    <p>A relative path is used when the image is stored inside your project folder.</p>
+                    <h2>Advantages of Relative Path</h2>
+                    <ul>
+                        <li>✔ Faster loading</li>
+                        <li>✔ Works offline</li>
+                        <li>✔ Easy to manage project files</li>
+                        <li>✔ Best for local websites</li>
+                    </ul>
                     <h5>Absolute Path</h5>
                     <p><b>What is absolute path?</b></p>
-                    <p>Image is from internet</p>
-                    <h3>🔹 Important Points</h3>
-                   <p>✔ Path must be correct, otherwise image won’t show ❌</p>
-                    <p>✔ File name is case-sensitive</p>
-                    <p>✔ Use / not \</p>
+                    <p>An absolute path is used when the image comes from the internet or another website.</p>
+                   <h2>Advantages of Absolute Path</h2>
+                    <ul>
+                        <li>✔ No need to store image in project folder</li>
+                        <li>✔ Useful for CDN and online images</li>
+                        <li>✔ Saves storage space</li>
+                    </ul>
+                    <h2>Disadvantages</h2>
+                    <ul>
+                        <li>❌ Needs internet connection</li>
+                        <li>❌ Image may disappear if website removes it</li>
+                    </ul>
+                    <h2>Common Image Formats:</h2>
+                    <div class="table-container">
+                        <table>
+                            <tr>
+                                <th>Format</th>
+                                <th>Use</th>
+                            </tr>
+                            <tr>
+                                <td>JPG / JPEG</td>
+                                <td>Photos and colorful images</td>
+                            </tr>
+                            <tr>
+                                <td>PNG</td>
+                                <td>Transparent background images</td>
+                            </tr>
+                            <tr>
+                                <td>GIF</td>
+                                <td>Animated images</td>
+                                <tr>
+                                <td>SVG</td>
+                                <td>Vector graphics and logos</td>
+                        </tr>
+                            <tr>
+                                <td>WEBP</td>
+                            <td>Modern lightweight images</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h2>Best Practices for Images</h2>
+                    <ul>
+                        <li>✔ Always use alt attribute</li>
+                        <li>✔ Use correct file names</li>
+                        <li>✔ Compress images for faster loading</li>
+                        <li>✔ Use proper width and height</li>
+                        <li>✔ Keep images inside a separate folder like images/</li>
+                        <li>✔ Use meaningful image names</li>
+                    </ul>
+                    <h3>Summary</h3>
+                    <li>img tag is used to display images</li>
+                    <li>src defines image location</li>
+                    <li>alt provides alternative text</li>
+                    <li>width and height control image size</li>
+                    <li>Images can also work as links</li>
+                    <li>Relative paths use local project files</li>
+                    <li>Absolute paths use internet image URLs</li>
+                    <li>Correct image paths are very important</li>
                 </div>
 
                 <div class="quiz-container">
