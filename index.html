@@ -2919,11 +2919,12 @@ Input fields are created using the &lt;input&gt; tag.Different input types help 
             <section class="section" id="media">
                 <h2 class="section-title">HTML Media (Audio & Video)</h2>
                 <div class="section-content">
-                    <p>Media tags allow you to play sound and videos.</p>
-
+                    <p>HTML provides powerful media tags that allow you to easily play audio (sound/music) and video files directly on a webpage without any external software.These tags make websites more interactive, engaging, and user-friendly.</p>
+                    
                     <h3>Audio Tag</h3>
                     <p><b>What is audio tag?</b></p>
-                    <p>The &lt;audio&gt; tag is used to add sound/music to a webpage.</p>
+                    <p>The &lt;audio&gt; tag is used in HTML to embed sound or music into a webpage.It allows users to play, pause, and control audio files directly in the browser.</p>
+                    
                     <div class="code-block">
                         &lt;audio controls&gt;<br>
                         &nbsp;&nbsp;&lt;source src="song.mp3" type="audio/mp3"&gt;<br>
@@ -2932,17 +2933,29 @@ Input fields are created using the &lt;input&gt; tag.Different input types help 
                     <p style="font-size: 30px;"> <b> This is the output of the code </b></p>
                     <img src="control.png" alt="ChatGPT Image" height="300">
 
-                    <h3>Attributes:</h3>
+                    <h3>Attributes of Audio Tag</h3>
+                    <h2>1. controls</h2>
                     <ul>
                         <li>controls (Work: Shows media control buttons Like:Play▶ Pause⏸ Volume🔊 Fullscreen⛶)</li>
                         <li>autoplay(Starts playing automatically.)</li>
                         <li>loop(Starts playing automatically)</li>
                         <li>muted(Starts media with no sound)</li>
                     </ul>
-
+                        <h2>2. autoplay</h2>
+                    <p>This attribute makes the audio start playing automatically when the page loads.</p>
+                    <p>Code : &lt;audio autoplay&gt;</p>
+                    <p>⚠️ Note: Most browsers block autoplay unless the audio is muted.</p>
+                            <h2>3. loop</h2>
+                    <p>This makes the audio repeat continuously after it ends.</p>
+                    <p>Code : &lt;audio loop&gt;</p>
+                    <p> Eg: Background music in games or websites.</p>
+                    <h2>4. muted</h2>
+                    <p>This starts the audio with no sound.</p>
+                    <p>Useful when you want audio to play without disturbing the user.</p>
+                    
                     <h3>Video Tag</h3>
                     <p><b>What is video tag?</b></p>
-                    <p>The &lt;video&gt; tag is used to add videos to a webpage.</p>
+                    <p>The &lt;video&gt; tag is used in HTML to embed video content on a webpage.It allows users to watch videos directly in the browser with controls like play, pause, and volume.</p>
                     <div class="code-block">
                         &lt;video width="400" controls&gt;<br>
                         &nbsp;&nbsp;&lt;source src="movie.mp4" type="video/mp4"&gt;<br>
@@ -2950,18 +2963,32 @@ Input fields are created using the &lt;input&gt; tag.Different input types help 
                     </div>
                     <p style="font-size: 30px;"> <b> This is the output of the code </b></p>
                     <img src="video.png" alt="ChatGPT Image" height="300">
-
+                    <h2>🎥 Features of Video Tag</h2>
+                    <ul>
+                        <li>Supports multiple video formats (MP4, WebM, Ogg)</li>
+                        <li>Built-in playback controls</li>
+                        <li>Can be resized using width and height</li>
+                        <li>Works without external plugins</li>
+                    </ul>
                     <h3>Poster Images</h3>
                     <p><b>What is poster image?</b></p>
-                    <p>The poster attribute is used in the &lt;video&gt; tag to show an image before the video starts playing.</p>
+                   <p>The poster attribute is used in the <video> tag to display an image before the video starts playing.It acts like a thumbnail preview for the video.</p>
                     <div class="code-block">
                         &lt;video poster="thumb.jpg" controls&gt;&lt;/video&gt;
                     </div>
                 </div>
                 <p style="font-size: 30px;"> <b> This is the output of the code </b></p>    
                 <img src="poster.png" alt="ChatGPT Image" height="300"> 
-
-                <div class="quiz-container">
+                <h2>🎯 Benefits of Poster Image:</h2>
+                <ul>
+                    <li>Makes video look attractive before playing</li>
+                    <li>Helps users understand video content</li>
+                    <li>Improves website design and UI</li>
+                    <li>Used in YouTube-style thumbnails</li>
+                </ul>
+                <h3>📌 Conclusion</h3>
+                <p>HTML media tags like  &lt;audio&gt; and  &lt;Voice&gt; make webpages more dynamic and interactiveThey allow users to directly play music and videos without needing extra apps or plugins.Using attributes like controls, autoplay, loop, muted, and poster improves usability and design quality of a website.</p>
+                    <div class="quiz-container">
                     <h3 class="quiz-title">HTML Media Quiz</h3>
                     <form id="media-quiz">
                         <div class="quiz-question">
