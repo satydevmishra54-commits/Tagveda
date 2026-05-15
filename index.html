@@ -5819,6 +5819,11 @@ Input fields are created using the &lt;input&gt; tag.Different input types help 
                 // Download Certificate 
         if (downloadCertificateBtn) {
             downloadCertificateBtn.addEventListener('click', () => {
+                 // Google Analytics Event
+                gtag('event', 'certificate_download', {
+  event_category: 'Certificate',
+  event_label: 'HTML Course Certificate'
+});
                 const certificateElement = document.querySelector('.certificate');
                 downloadCertificateBtn.textContent = 'Generating...';
                 
