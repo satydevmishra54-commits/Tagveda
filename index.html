@@ -3373,7 +3373,12 @@ Input fields are created using the &lt;input&gt; tag.Different input types help 
                         <li>3. Interactive Content</li>
                         <li>4. Reusable Components</li>
                     </ul><br>
-                        
+                        <h3>Disadvantages of Iframes</h3>
+                    <ul>
+                        <li>1. Slower Page Loading</li>
+                        <li>2. Security Risks</li>
+                        <li>3. SEO Limitations</li>
+                    </ul><br>
             
                     <div class="code-block">
                         &lt;iframe src="page.html"&gt;&lt;/iframe&gt;
@@ -3381,33 +3386,87 @@ Input fields are created using the &lt;input&gt; tag.Different input types help 
                     <p style="font-size: 30px;"> <b> This is the output of the code </b></p>    
                     <img src="go.png" alt="ChatGPT Image" height="300">
                     <h3>YouTube Video Embed</h3>
-                    <p><b>Waht is YouTube Video Embed?</b></p>
-                    <p>YouTube Video Embed = displaying a YouTube video on your webpage using &lt;iframe&gt;.</p>
+                    <p><b>What is YouTube Video Embed?</b></p>
+                    <p>YouTube Video Embed means displaying a YouTube video directly on your webpage using an &lt;iframe&gt;.Instead of sending users to YouTube, the video can play inside your website.</p>
                     <div class="code-block">
                         &lt;iframe src="https://www.youtube.com/embed/videoID"&gt;&lt;/iframe&gt;
                     </div>
                     <p style="font-size: 30px;"> <b> This is the output of the code </b></p>    
                     <img src="iframe.png" alt="ChatGPT Image" height="300">
+                    <h3>Benefits of YouTube Embed</h3>
+                    <ul>
+                        <li>1. Videos Play Directly on Website</li>
+                        <li>2. Better User Experience</li>
+                        <li>3. Useful for Tutorials</li>
+                        <li>4. Saves Server Storage</li>
+                    </ul>
 
                     <h3>Google Map Embed</h3>
                     <p><b>What is Google Map Embed?</b></p>
-                    <p>Google Map Embed = showing a Google Map on your webpage using &lt;iframe&gt;.</p>
+                    <p>Google Map Embed means showing a Google Map directly on your webpage using an &lt;iframe&gt;.</p>
+                    <p><b>This helps users find:</b></p>
+                    <ul>
+                        <li>Locations</li>
+                        <li>Shops</li>
+                        <li>Offices</li>
+                        <li>Schools</li>
+                        <li>Restaurants</li>
+                    </ul>
                     <div class="code-block">
                         &lt;iframe src="map_link"&gt;&lt;/iframe&gt;
                     </div>
                     <p style="font-size: 30px;"> <b> This is the output of the code </b></p>    
                     <img src="map.png" alt="ChatGPT Image" height="300">
+                    <h3>Benefits of Google Map Embed</h3>
+                    <ul>
+                        <li>1. Easy Navigation</li>
+                        <li>2. Professional Appearance</li>
+                        <li>3. Helpful for Customers</li>
+                        <li>4. Interactive Features</li>
+                    </ul>
 
                     <h3>Security Attributes</h3>
                     <p><b> What is security attributes?</b></p>
-                    <p>Security attributes are used to protect your webpage when you embed content (like videos, maps, or other websites) using &lt;iframe&gt;.</p>
+                    <p>Security attributes are used to protect your webpage when embedding external content using &lt;iframe&gt;.</p>
+                    <p><b>They help prevent:</b></p>
+                    <ul>
+                        <li>Malicious scripts</li>
+                        <li>Unsafe websites</li>
+                        <li>Unauthorized actions</li>
+                        <li>Data theft</li>
+                    </ul>
+                    <h3>Important Security Attributes</h3>
+                    <p>sandbox:The sandbox attribute restricts what the iframe content can do.</p>
+                    <p>Example:</p>
                     <div class="code-block">
                         &lt;iframe sandbox&gt;&lt;/iframe&gt;
                     </div>
                 </div>
                 <p style="font-size: 30px;"> <b> This is the output of the code </b></p>    
-                <img src="hellow.png" alt="ChatGPT Image" height="300">
-
+                <img src="hellow.png" alt="ChatGPT Image" height="300"><br>
+                <p>allowfullscreen : Allows videos to open in fullscreen mode.</p>
+                <p>Example:</p>
+                 <div class="code-block">
+                        &lt;iframe ="video.html" allowfullscreensrc&gt;&lt;/iframe&gt;
+                    </div><br>
+                <p>loading="lazy" : Loads iframe content only when needed, improving webpage speed.</p>
+                <p>Example:</p>
+                <div class="code-block">
+             &lt;iframe src="page.html"loading="lazy"&gt;&lt;/iframe&gt;
+                </div><br>
+                <h3>Summary</h3>
+                <p>&lt;iframe&gt;is used to embed another webpage inside a webpage.</p>
+                <ul>
+                     <li>Iframes can display:</li>
+                     <li>Websites</li>
+                     <li>Videos</li>
+                     <li>Maps</li>
+                     <li>Apps</li>
+                     <li>Documents</li>
+                     <li>YouTube videos and Google Maps are commonly embedded using iframes.</li>
+                     <li>Security attributes help protect webpages from unsafe embedded content.</li>
+                     <li>Proper iframe usage improves user experience and website functionality.</li>
+                </ul><br>
                 <div class="quiz-container">
                     <h3 class="quiz-title">HTML Iframes Quiz</h3>
                     <form id="iframes-quiz">
