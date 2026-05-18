@@ -3525,16 +3525,16 @@ Input fields are created using the &lt;input&gt; tag.Different input types help 
             <section class="section" id="entities">
                 <h2 class="section-title">HTML Entities & Symbols</h2>
                 <div class="section-content">
-                    <p>HTML entities are used to display special characters that HTML normally understands as code.</p>
-
-                    <h3>Why Entities are Needed?</h3>
-                    <p>Some characters are reserved in HTML:</p>
+                    <p>HTML entities are special codes used to display reserved characters, symbols, and emojis on a webpage. Sometimes, certain characters in HTML are treated as part of the code instead of normal text. To solve this problem, HTML entities are used.HTML entities always start with an ampersand (&) and end with a semicolon (;).</p>
+                    <h2>Why HTML Entities are Needed?</h2>
+                    <p>Some characters are reserved in HTML because they are used in tags and coding syntax. If we directly write these characters in HTML, the browser may misunderstand them as HTML code.</p>
+                    <p>Reserved characters include:</p>
                     <ul>
-                        <li>&lt;</li>
-                        <li>&gt;</li>
-                        <li>&amp;</li>
+                        <li> &lt; Less than symbol</li>
+                        <li> &gt; Greater than symbol</li>
+                        <li> >&amp; Ampersand symbol</li>
                     </ul>
-
+                    
                     <h3>Common HTML Entities</h3>
                     <div class="table-container">
                         <table>
@@ -3562,6 +3562,18 @@ Input fields are created using the &lt;input&gt; tag.Different input types help 
                                 <td>®</td>
                                 <td>&amp;reg;</td>
                             </tr>
+                            <tr>
+                                <td>"</td>
+                                <td>&quot;</td>
+                            </tr>
+                            <tr>
+                                <td>'</td>
+                                <td>&apos;</td>
+                            </tr>
+                            <tr>
+                                <td>₹</td>
+                                <td>&#8377;</td>
+                            </tr>       
                         </table>
                     </div>
 
@@ -3573,12 +3585,52 @@ Input fields are created using the &lt;input&gt; tag.Different input types help 
                     <img src="no.png" alt="ChatGPT Image" height="300">
 
                     <h3>Emojis in HTML</h3>
+                    <p>HTML also supports emojis using entity numbers. Emojis make webpages more attractive and interactive.</p>
                     <div class="code-block">
                         &lt;p&gt;&amp;#128512;&lt;/p&gt;
                     </div>
                 </div>
                 <p style="font-size: 30px;"> <b> This is the output of the code </b></p>    
-                <img src="code.png" alt="ChatGPT Image" height="300">
+                <img src="code.png" alt="ChatGPT Image" height="300"><br>
+                <h3>More Emoji Examples:</h3>
+                <div class="table-container">
+                        <table>
+                            <tr>
+                                <th>Emoji</th>
+                                <th>Code</th>
+                            </tr>
+                            <tr>
+                                <td>😀</td>
+                                <td>&amp;#128512;&lt;</td>
+                            </tr>
+                            <tr>
+                                <td>😂</td>
+                                <td>&amp;#128514;&lt;</td>
+                            </tr>
+                            <tr>
+                                <td>❤️</td>
+                                <td>&amp;#10084;&lt;</td>
+                            </tr>
+                            <tr>
+                            <td>👍</td>
+                            <td>&amp;#128077;&lt;</td>
+                        </tr>
+                            <tr>
+                                <td>🎉</td>
+                                <td>&amp;#127881;&lt;</td>
+                            </tr>
+                        </table>
+                </div><br>
+                <h3>Advantages of HTML Entities</h3>
+                <ul>
+                    <Li>Prevents browser confusion with reserved characters</Li>
+                    <li>Helps display special symbols correctly</li>
+                    <li>Useful for mathematical symbols and currency symbols</li>
+                    <li>Makes webpages more professional and attractive</li>
+                    <li>Allows adding emojis and decorative characters</li>
+                </ul><br>
+                <h3>Conclusion</h3>
+                <p>HTML entities are very important in web development. They help display reserved characters, symbols, and emojis correctly on a webpage. By using HTML entities, developers can avoid coding errors and create cleaner and more user-friendly websites.</p>
                 <div class="quiz-container">
                     <h3 class="quiz-title">HTML Entities & Symbols Quiz</h3>
                     <form id="entities-quiz">
