@@ -4263,35 +4263,87 @@ Input fields are created using the &lt;input&gt; tag.Different input types help 
             <section class="section" id="accessibility">
                 <h2 class="section-title">HTML Accessibility</h2>
                 <div class="section-content">
-                    <p>HTML Accessibility means designing web pages so that everyone can use them, including people with disabilities.</p>
+                    <p>HTML Accessibility means designing web pages so that everyone can use them easily, including people with disabilities. Accessibility helps users who may have difficulty seeing, hearing, moving, or understanding content. A good accessible website works properly with screen readers, keyboards, and other assistive technologies. Accessibility also improves the overall user experience for everyone.Web accessibility is important because the internet should be usable by all people. Proper accessibility makes websites easier to navigate, understand, and interact with on different devices and for different users.</p>
 
                     <h3>Alt Text</h3>
                     <p><b>What is alt text?</b></p>
-                    <p>text that describes an image.</p>
+                    <p>Alt text (alternative text) is a short description added to an image. It helps screen readers explain the image to visually impaired users. Alt text is also useful if the image does not load properly because the browser will show the text instead.</p>
                     <div class="code-block">
                         &lt;img src="img.jpg" alt="Student studying"&gt;
                     </div>
 
                     <p style="font-size: 30px;"> <b> This is the output of the code </b></p>
                     <img src="picture.png" alt="ChatGPT Image" height="300">
-
+                    <h2>Why Alt Text is Important?</h2>
+                    <ul>
+                        <li>Helps visually impaired users understand images</li>
+                        <li>Improves website accessibility</li>
+                        <li>Helps search engines understand images</li>
+                        <li>Useful when images fail to load</li>
+                        <li>Makes web pages more user-friendly</li>
+                    </ul>
+                    <h2>Good Alt Text Tips</h2>
+                    <ul>
+                        <li>Keep descriptions short and clear</li>
+                        <li>Describe the important part of the image</li>
+                        <li>Avoid unnecessary words like “image of”</li>
+                        <li>Write meaningful descriptions</li>
+                    </ul>
                     <h3>Labels for Inputs</h3>
                     <p><b>What is labels for inputs?</b></p>
-                    <p>Text that tells the user what to enter in an input box.</p>
+                    <p>Labels are text descriptions connected to form fields such as text boxes, checkboxes, radio buttons, and password fields. Labels tell users what information they need to enter.</p>
                     <div class="code-block">
                         &lt;label&gt;Name:&lt;/label&gt;<br>
                         &lt;input type="text"&gt;
                     </div>
 <p style="font-size: 30px;"> <b> This is the output of the code </b></p>    
-                    <img src="label.png" alt="ChatGPT Image" height="300">  
+                    <img src="label.png" alt="ChatGPT Image" height="300">
+                    <h2>Why Labels are Important?</h2>
+                    <ul>
+                        <li>Help users understand form fields clearly</li>
+                        <li>Improve accessibility for screen reader users</li>
+                        <li>Make forms easier to use</li>
+                        <li>Increase user friendliness</li>
+                        <li>Help users click labels to focus on inputs</li>
+                    </ul>
                     <h3>ARIA Attributes</h3>
                     <p><b>What aria attributes?</b></p>
-                    <p>ARIA (Accessible Rich Internet Applications) attributes are used to improve accessibility for users who use screen readers or assistive tools.</p>
+                    <p>ARIA stands for Accessible Rich Internet Applications. ARIA attributes help improve accessibility for users who use screen readers or assistive technologies. They provide extra information about elements on a webpage.</p>
                     <div class="code-block">
                         &lt;button aria-label="Close"&gt;X&lt;/button&gt;
                     </div>
+                    <p>Here, the screen reader will read “Close” instead of just saying “X”.</p>
                 <p style="font-size: 30px;"> <b> This is the output of the code </b></p>    
-                    <img src="air.png" alt="ChatGPT Image" height="300">   
+                    <img src="air.png" alt="ChatGPT Image" height="300"> 
+                    <h2>Common ARIA Attributes</h2>
+                    <div class="table-container">
+                        <table>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>Purpose</th>
+                            </tr>
+                            <tr>
+                                <td>aria-label</td>
+                                <td>Gives an accessible label</td>
+                            </tr>
+                            <tr>
+                                <td>aria-hidden</td>
+                                <td>Hides content from screen readers</td>
+                            </tr>
+                            <tr>
+                                <td>aria-expanded</td>
+                                <td>Shows whether content is expanded</td>
+                            </tr>
+                            <tr>
+                                <td>aria-checked</td>
+                                <td>Indicates checked state</td>
+                            </tr>
+                            <tr>
+                                <td>role</td>
+                                <td>Defines the purpose of an element</td>
+                            </tr>
+                        </table>
+                    </div>
                     <h3>Keyboard Friendly</h3>
                     <ul>
                         <li>Use buttons instead of div</li>
