@@ -5092,7 +5092,7 @@ Input fields are created using the &lt;input&gt; tag.Different input types help 
             <section class="section" id="deprecated">
                 <h2 class="section-title">Deprecated HTML Tags</h2>
                 <div class="section-content">
-                    <p>These tags are not recommended.</p>
+                    <p>Some HTML tags are now considered deprecated, which means they are no longer recommended in modern web development. These tags may still work in some browsers, but developers should avoid using them because better and cleaner alternatives are available in HTML5 and CSS. Using modern methods helps websites look more professional, load faster, and become easier to maintain.</p>
                     <div class="table-container">
                         <table>
                             <tr>
@@ -5101,22 +5101,46 @@ Input fields are created using the &lt;input&gt; tag.Different input types help 
                             </tr>
                             <tr>
                                 <td>&lt;font&gt;</td>
-                                <td>Use CSS</td>
+                                <td>The &lt;font&gt; tag was used to change text size, color, and style directly in HTML. Modern websites use CSS instead because CSS gives better control over design and keeps the code clean and organized.</td>
                             </tr>
                             <tr>
                                 <td>&lt;center&gt;</td>
-                                <td>Use CSS</td>
+                                <td>The &lt;center&gt; tag was used to place content in the middle of the page. Today, CSS properties like text-align: center are used because they are more flexible and work better for responsive web design</td>
                             </tr>
                             <tr>
                                 <td>&lt;marquee&gt;</td>
-                                <td>Outdated</td>
+                                <td>The &lt;marquee&gt; tag created moving or scrolling text on a webpage. It is outdated and not supported properly in modern web standards. CSS animations and JavaScript are now used to create smooth and attractive animations.</td>
                             </tr>
                             <tr>
                                 <td>&lt;strike&gt;</td>
-                                <td>Use &lt;del&gt;</td>
+                                <td>The &lt;strike&gt; tag was used to display text with a line through it. Modern HTML uses the &lt;dl&gt; tag to show deleted text because it provides better meaning and semantic structure to the webpage</td>
                             </tr>
                         </table>
                     </div>
+                    <h2>Why Deprecated Tags Should Be Avoided</h2>
+                    <ul>
+                        <li>They make HTML code outdated and harder to maintain.</li>
+                        <li>Modern browsers focus more on HTML5 and CSS standards.</li>
+                        <li>CSS provides better styling options and cleaner design.</li>
+                        <li>Websites become more responsive and mobile-friendly.</li>
+                        <li>Semantic HTML improves accessibility and SEO performance.</li>
+                    </ul>
+                   <h3>Why Deprecated Tags Should Be Avoided</h3>
+                    <p>Using deprecated tags can create many problems in modern web development. Some of the major reasons are:</p>
+                    <h2>1. Poor Code Structure</h2>
+                    <p>Deprecated tags mix content and design together, making the code messy and difficult to understand.</p>
+                    <h2>2. Difficult Website Maintenance</h2>
+                    <p>If styling is written directly inside HTML tags, changing the design later becomes harder because every page must be edited manually.</p>
+                    <h2>3. Not Mobile-Friendly</h2>
+                    <p>Modern responsive websites need flexible layouts that work on phones, tablets, and desktops. Deprecated tags do not support responsive design properly.</p>
+                   <h2>4. Reduced Accessibility</h2>
+                   <p>Semantic and modern HTML improves accessibility for screen readers and users with disabilities. Deprecated tags do not provide meaningful structure.</p>
+                    <h2>5. SEO Problems</h2> 
+                    <p>Search engines prefer websites built with modern HTML5 standards because they are cleaner and easier to understand.</p>
+                   <h2>6. Browser Compatibility Issues</h2>
+                    <p>Some deprecated tags may not work correctly in modern browsers and could stop working completely in future updates.</p>
+                    <h3>Conclusion</h3>
+                    <p>Deprecated HTML tags are old tags that are no longer recommended in modern web development. Although some browsers still support them, developers should avoid using them because they create outdated, messy, and less responsive websites. Modern HTML5 and CSS provide cleaner, faster, and more professional ways to design webpages. By using CSS for styling and semantic HTML for structure, developers can create websites that are easier to maintain, mobile-friendly, accessible, and optimized for search engines.</p>
                 </div>
 
                 <div class="quiz-container">
@@ -5177,11 +5201,13 @@ Input fields are created using the &lt;input&gt; tag.Different input types help 
             <section class="section" id="html-css">
                 <h2 class="section-title">HTML with CSS</h2>
                 <div class="section-content">
-                    <p>CSS styles HTML.</p>
-
+                 <p>CSS (Cascading Style Sheets) is used to style and design HTML webpages.HTML creates the structure of the webpage, while CSS makes the webpage look attractive and visually organized. Using CSS, developers can change colors, fonts, spacing, layouts, animations, and many other design elements. CSS helps websites look modern, responsive, and user-friendly on different devices like mobiles, tablets, and computers.</p>
+                    
                     <h3>Inline CSS</h3>
                     <p><b>What is Inline CSS?</b></p>
-                    <p>Inline CSS is used to apply styles directly inside an HTML tag using the style attribute.</p>
+                    <p>Inline CSS is used to apply styles directly inside an HTML element by using the style attribute.</p>
+                    <p>This method is useful when you want to style a single element quickly without creating a separate CSS file or writing styles in the &lt;style&gt; section.</p>
+                    <p>Inline CSS affects only the specific tag where the style is written. It is simple and easy for beginners, but it is not recommended for large websites because it makes the HTML code lengthy and difficult to manage.</p>
                     <div class="code-block">
                         &lt;p style="color:red;"&gt;Text&lt;/p&gt;
                     </div>
@@ -5198,15 +5224,44 @@ Input fields are created using the &lt;input&gt; tag.Different input types help 
                     </div>
                     <p style="font-size: 30px;"> <b> This is the output of the code </b></p>    
                     <img src="blue.png" alt="ChatGPT Image" height="300">   
+                    <h2>Explanation</h2>
+                    <p>In this example, the paragraph text color becomes red because the color:red; property is written inside the style attribute.</p>
+                    <h2>Advantages of Inline CSS</h2>
+                    <ul>
+                        <li>Easy to use for small changes</li>
+                        <li>Useful for testing styles quickly</li>
+                        <li>No separate CSS file needed</li>
+                    </ul>
+                    <h2>Disadvantages of Inline CSS</h2>
+                    <ul>
+                        <li>Makes HTML code messy</li>
+                        <li>Difficult to reuse styles</li>
+                        <li>Not suitable for large projects</li>
+                    </ul>
                     <h3>External CSS (Best)</h3>
                     <p><b>What is external css?</b></p>
-                    <p>External CSS is used to apply styles by linking a separate CSS file to your HTML file.</p>
+                    <p>Internal CSS is used to apply styles inside the same HTML document using the  &lt;style&gt; tag.</p>
+                    <p>The  &lt;style&gt; tag is usually written inside the  &lt;head&gt; section of the HTML file.</p>
+                    <p>This method is helpful when a single webpage needs unique styling. Internal CSS allows multiple HTML elements to share the same style rules, making the code cleaner than inline CSS.</p>
                     <div class="code-block">
                         &lt;link rel="stylesheet" href="style.css"&gt;
                     </div>
-                </div>
                 <p style="font-size: 30px;"> <b> This is the output of the code </b></p>    
                 <img src="best.png" alt="ChatGPT Image" height="300">
+                    <h2>Explanation</h2>
+                    <p>In this example, all paragraph (&lt;p&gt;) elements on the webpage will appear in blue color because the style rule is written inside the &lt;style&gt; tag.</p>
+                    <h2>Advantages of Internal CSS</h2>
+                    <ul>
+                        <li>Keeps styling separate from HTML content</li>
+                        <li>Easier to manage than inline CSS</li>
+                        <li>Useful for single-page websites</li>
+                    </ul>
+                    <h2>Disadvantages of Internal CSS</h2>
+                    <ul>
+                        <li>Styles cannot be reused across multiple pages</li>
+                        <li>Large style sections can make the file bigger</li>
+                    </ul>
+                </div>
                 <div class="quiz-container">
                     <h3 class="quiz-title">HTML with CSS Quiz</h3>
                     <form id="html-css-quiz">
